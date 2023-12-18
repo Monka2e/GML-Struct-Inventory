@@ -15,8 +15,13 @@
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
+    {"name":"Items","order":1,"path":"folders/Sprites/Items.yy",},
+    {"name":"Apple","order":1,"path":"folders/Sprites/Items/Apple.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sItemPickupApple","order":1,"path":"sprites/sItemPickupApple/sItemPickupApple.yy",},
+    {"name":"oItemPickup","order":1,"path":"objects/oItemPickup/oItemPickup.yy",},
     {"name":"inventoryFunctions","order":1,"path":"scripts/inventoryFunctions/inventoryFunctions.yy",},
+    {"name":"sItemInventoryNone","order":2,"path":"sprites/sItemInventoryNone/sItemInventoryNone.yy",},
   ],
 }

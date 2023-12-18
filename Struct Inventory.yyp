@@ -26,6 +26,8 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Items","folderPath":"folders/Sprites/Items.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Apple","folderPath":"folders/Sprites/Items/Apple.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,
@@ -34,9 +36,14 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"sItemPickupApple","path":"sprites/sItemPickupApple/sItemPickupApple.yy",},},
     {"id":{"name":"Item","path":"scripts/Item/Item.yy",},},
+    {"id":{"name":"sItemInventoryApple","path":"sprites/sItemInventoryApple/sItemInventoryApple.yy",},},
+    {"id":{"name":"oItemPickup","path":"objects/oItemPickup/oItemPickup.yy",},},
     {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
     {"id":{"name":"inventoryFunctions","path":"scripts/inventoryFunctions/inventoryFunctions.yy",},},
+    {"id":{"name":"sItemInventoryNone","path":"sprites/sItemInventoryNone/sItemInventoryNone.yy",},},
+    {"id":{"name":"sItemPickupNone","path":"sprites/sItemPickupNone/sItemPickupNone.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

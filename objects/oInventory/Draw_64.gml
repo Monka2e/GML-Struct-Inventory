@@ -3,5 +3,7 @@ for (var i = 0; i < array_length(global.INVENTORY); i++) {
 	if (global.INVENTORY[i].ID != ItemID.none) {
 		inventoryText += ": " + string(global.INVENTORY[i].stack)
 	}
-	draw_text(20, 20 + 20 * i, inventoryText);
+	
+	draw_sprite(global.INVENTORY[i].inventorySprite, 0, 20, 20 + 25 * i);
+	draw_text(40, 20 + 25 * i, inventoryText);
 }
