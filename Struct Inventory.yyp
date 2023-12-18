@@ -34,7 +34,9 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"itemFunctions","path":"scripts/itemFunctions/itemFunctions.yy",},},
+    {"id":{"name":"Item","path":"scripts/Item/Item.yy",},},
+    {"id":{"name":"oInventory","path":"objects/oInventory/oInventory.yy",},},
+    {"id":{"name":"inventoryFunctions","path":"scripts/inventoryFunctions/inventoryFunctions.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
