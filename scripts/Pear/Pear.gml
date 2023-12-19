@@ -4,4 +4,4 @@ function Pear(itemStack) : BaseItem(itemStack) constructor {
 	pickupSprite = sItemPickupPear;
 	inventorySprite = sItemInventoryPear;
 	maxStack = 10;
-}
+};

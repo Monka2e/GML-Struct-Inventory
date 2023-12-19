@@ -4,4 +4,4 @@ function Apple(itemStack) : BaseItem(itemStack) constructor {
 	pickupSprite = sItemPickupApple;
 	inventorySprite = sItemInventoryApple;
 	maxStack = 10;
-}
+};

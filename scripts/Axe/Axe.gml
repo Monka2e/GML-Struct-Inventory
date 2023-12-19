@@ -4,4 +4,4 @@ function Axe(itemStack) : BaseItem(itemStack) constructor {
 	pickupSprite = sItemPickupAxe;
 	inventorySprite = sItemInventoryAxe;
 	maxStack = 1;
-}
+};
