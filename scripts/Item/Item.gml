@@ -13,7 +13,7 @@ function Item(itemStack = 1) constructor {
 	inventorySprite = sItemInventoryNone;
 	maxStack = 999;
 	static OnClick = function() {
-		show_debug_message("on click event for item type: " + displayName);
+		show_debug_message("on click event for item name: " + displayName);
 	};
 	
 	stack = itemStack;

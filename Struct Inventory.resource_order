@@ -18,12 +18,15 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
     {"name":"Items","order":3,"path":"folders/Scripts/Items.yy",},
+    {"name":"Orange","order":3,"path":"folders/Sprites/Items/Orange.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sItemPickupApple","order":1,"path":"sprites/sItemPickupApple/sItemPickupApple.yy",},
+    {"name":"sItemPickupOrange","order":1,"path":"sprites/sItemPickupOrange/sItemPickupOrange.yy",},
     {"name":"oItemPickup","order":1,"path":"objects/oItemPickup/oItemPickup.yy",},
     {"name":"inventoryFunctions","order":1,"path":"scripts/inventoryFunctions/inventoryFunctions.yy",},
     {"name":"sItemInventoryNone","order":2,"path":"sprites/sItemInventoryNone/sItemInventoryNone.yy",},
+    {"name":"Orange","order":2,"path":"scripts/Orange/Orange.yy",},
     {"name":"Apple","order":1,"path":"scripts/Apple/Apple.yy",},
   ],
 }

@@ -1,2 +1,2 @@
 randomStack = floor(random(5));
-item = new Apple(randomStack);
+item = new Orange(randomStack);
