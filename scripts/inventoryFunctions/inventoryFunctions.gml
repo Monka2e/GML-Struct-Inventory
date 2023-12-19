@@ -2,8 +2,14 @@ var itemNone = new BaseItem();
 global.INVENTORY_SIZE = 10;
 global.INVENTORY = array_create(global.INVENTORY_SIZE, itemNone);
 
-function inventoryAddItem(item) {
-	show_debug_message("should be adding inventory item '" + item.displayName + "' with stack of '" + string(item.stack) + "'");
+function inventoryAddItemToEmptySlot(item) {
+	show_debug_message("attempt to add inventory item '" + item.displayName + "' with stack of '" + string(item.stack) + "'");
+	for (var i = 0; i < global.INVENTORY_SIZE; i++) {
+		if (global.INVENTORY[i].ID == ItemID.NONE) {
+			global.INVENTORY[i] = item;
+			break;
+		}
+	}
 }
 
 function inventoryAddItemStack(item, startIndex = 0) {
