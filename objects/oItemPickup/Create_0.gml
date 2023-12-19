@@ -1,2 +1,2 @@
-randomStack = floor(random(5));
-item = new Orange(randomStack);
+var randomStack = floor(random(5));
+item = getItemFromID(irandom_range(0, ItemID.NONE), randomStack);

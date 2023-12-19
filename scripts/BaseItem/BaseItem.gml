@@ -1,4 +1,4 @@
-function Item(itemStack = 1) constructor {
+function BaseItem(itemStack = 1) constructor {
 	ID = ItemID.NONE;
 	displayName = "none";
 	pickupSprite = sItemPickupNone;

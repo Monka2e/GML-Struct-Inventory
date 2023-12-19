@@ -1,4 +1,4 @@
-var itemNone = new Item();
+var itemNone = new BaseItem();
 global.INVENTORY_SIZE = 10;
 global.INVENTORY = array_create(global.INVENTORY_SIZE, itemNone);
 

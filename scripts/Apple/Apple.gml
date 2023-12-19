@@ -1,4 +1,4 @@
-function Apple(itemStack) : Item(itemStack) constructor {
+function Apple(itemStack) : BaseItem(itemStack) constructor {
 	ID = ItemID.APPLE;
 	displayName = "Apple";
 	pickupSprite = sItemPickupApple;
