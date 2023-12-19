@@ -11,9 +11,12 @@ function inventoryAddItemStack(item, startIndex = 0) {
 	for (var i = startIndex; i < global.INVENTORY_SIZE; i++) {
 		if (global.INVENTORY[i].ID == item.ID) {
 			item.stack = global.INVENTORY[i].addToStack(item.stack);
-			if (item.stack > 0) {
-				inventoryAddItemStack(item, i + 1);
+			if (item.stack == 0) {
+				break;
 			}
 		}
+	}
+	if (item.stack > 0) {
+		inventoryAddItem(item);
 	}
 }
