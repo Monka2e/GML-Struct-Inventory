@@ -1,5 +1,5 @@
-function TextField(linesArray = []) constructor {
-	lines = linesArray;
+function TextField(lineCount = 10) constructor {
+	lines = array_create(lineCount, "");
 	maxLines = 10;
 	
 	static addLine = function(line) {
