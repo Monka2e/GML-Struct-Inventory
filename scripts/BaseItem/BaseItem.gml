@@ -5,7 +5,7 @@ function BaseItem(itemStack = 1) constructor {
 	inventorySprite = sItemInventoryNone;
 	maxStack = 999;
 	static onClick = function() {
-		show_debug_message(self);
+		oChatTextField.chatField.addLine("click event for " + displayName);
 	};
 	
 	static addToStack = function(stackAdd) {
