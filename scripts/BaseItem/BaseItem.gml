@@ -11,11 +11,12 @@ function BaseItem(itemStack = 1) constructor {
 	static addToStack = function(stackAdd) {
 		var leftover = 0;
 		if (stack + stackAdd > maxStack) {
-			leftover = maxStack - stack + stackAdd;
+			leftover = stack + stackAdd - maxStack;
 			stack = maxStack;
 		} else {
 			stack += stackAdd;
 		}
+		show_debug_message("leftover: " + string(leftover));
 		return leftover;
 	};
 	
