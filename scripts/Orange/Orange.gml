@@ -1,5 +1,5 @@
 function Orange(itemStack) : Item(itemStack) constructor {
-	ID = ItemID.APPLE;
+	ID = ItemID.ORANGE;
 	displayName = "Orange";
 	pickupSprite = sItemPickupOrange;
 	inventorySprite = sItemInventoryOrange;

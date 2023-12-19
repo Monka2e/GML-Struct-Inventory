@@ -38,8 +38,8 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"sItemPickupApple","path":"sprites/sItemPickupApple/sItemPickupApple.yy",},},
     {"id":{"name":"sItemPickupOrange","path":"sprites/sItemPickupOrange/sItemPickupOrange.yy",},},
+    {"id":{"name":"sItemPickupApple","path":"sprites/sItemPickupApple/sItemPickupApple.yy",},},
     {"id":{"name":"sItemInventoryOrange","path":"sprites/sItemInventoryOrange/sItemInventoryOrange.yy",},},
     {"id":{"name":"Item","path":"scripts/Item/Item.yy",},},
     {"id":{"name":"sItemInventoryApple","path":"sprites/sItemInventoryApple/sItemInventoryApple.yy",},},

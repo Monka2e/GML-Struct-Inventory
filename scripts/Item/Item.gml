@@ -1,11 +1,3 @@
-enum ItemID {
-	APPLE,
-	ORANGE,
-	PEAR,
-	AXE,
-	NONE
-}
-
 function Item(itemStack = 1) constructor {
 	ID = ItemID.NONE;
 	displayName = "none";
@@ -17,4 +9,12 @@ function Item(itemStack = 1) constructor {
 	};
 	
 	stack = itemStack;
+}
+
+enum ItemID {
+	APPLE,
+	ORANGE,
+	PEAR,
+	AXE,
+	NONE
 }
