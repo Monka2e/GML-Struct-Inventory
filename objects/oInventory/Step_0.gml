@@ -12,5 +12,5 @@ if (selectedInventory > global.INVENTORY_SIZE - 1) {
 }
 
 if (mouse_check_button_pressed(mb_left)) {
-	global.INVENTORY[selectedInventory].OnClick();
+	global.INVENTORY[selectedInventory].onClick();
 }

@@ -3,5 +3,5 @@ function Orange(itemStack) : BaseItem(itemStack) constructor {
 	displayName = "Orange";
 	pickupSprite = sItemPickupOrange;
 	inventorySprite = sItemInventoryOrange;
-	maxStack = 999;
+	maxStack = 10;
 }

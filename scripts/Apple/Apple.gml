@@ -3,5 +3,5 @@ function Apple(itemStack) : BaseItem(itemStack) constructor {
 	displayName = "Apple";
 	pickupSprite = sItemPickupApple;
 	inventorySprite = sItemInventoryApple;
-	maxStack = 999;
+	maxStack = 10;
 }

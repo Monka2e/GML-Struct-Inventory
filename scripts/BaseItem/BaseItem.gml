@@ -4,8 +4,19 @@ function BaseItem(itemStack = 1) constructor {
 	pickupSprite = sItemPickupNone;
 	inventorySprite = sItemInventoryNone;
 	maxStack = 999;
-	static OnClick = function() {
-		show_debug_message("on click event for item name: " + displayName);
+	static onClick = function() {
+		show_debug_message(self);
+	};
+	
+	static addToStack = function(stackAdd) {
+		var leftover = 0;
+		if (stack + stackAdd > maxStack) {
+			leftover = maxStack - stack + stackAdd;
+			stack = maxStack;
+		} else {
+			stack += stackAdd;
+		}
+		return leftover;
 	};
 	
 	stack = itemStack;
