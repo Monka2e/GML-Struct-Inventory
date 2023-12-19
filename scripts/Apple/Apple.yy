@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Item",
+  "name": "Apple",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

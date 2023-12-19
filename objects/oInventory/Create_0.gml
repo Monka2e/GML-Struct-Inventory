@@ -1,6 +1,6 @@
-var apple = new Item(ItemID.apple, "Apple", sItemPickupApple, sItemInventoryApple, 3, 10);
-var apple2 = new Item(ItemID.apple, "Apple", sItemPickupApple, sItemInventoryApple, 7, 10);
-array_set(global.INVENTORY, 0, apple);
-array_set(global.INVENTORY, 1, apple2);
+var item1 = new Item(2);
+var item2 = new Item(1);
+array_set(global.INVENTORY, 0, item1);
+array_set(global.INVENTORY, 1, item2);
 
 selectedInventory = 0;

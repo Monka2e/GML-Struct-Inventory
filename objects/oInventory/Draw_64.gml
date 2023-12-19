@@ -1,6 +1,6 @@
 for (var i = 0; i < array_length(global.INVENTORY); i++) {
 	var inventoryText = global.INVENTORY[i].displayName;
-	if (global.INVENTORY[i].ID != ItemID.none) {
+	if (global.INVENTORY[i].ID != ItemID.NONE) {
 		inventoryText += ": " + string(global.INVENTORY[i].stack)
 	}
 	
