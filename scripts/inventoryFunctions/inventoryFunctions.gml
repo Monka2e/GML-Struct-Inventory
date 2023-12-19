@@ -27,3 +27,9 @@ function inventoryAddItemStack(item, pickupItem) {
 		inventoryAddItemToEmptySlot(item, pickupItem);
 	}
 }
+
+function inventoryDropItem(inventoryIndex) {
+	if ((global.INVENTORY[inventoryIndex].ID != ItemID.NONE) && (global.INVENTORY[inventoryIndex] != noone)) {
+		global.INVENTORY[inventoryIndex] = new BaseItem();
+	}
+}

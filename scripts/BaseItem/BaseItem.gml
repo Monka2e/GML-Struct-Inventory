@@ -4,9 +4,14 @@ function BaseItem(itemStack = 1) constructor {
 	pickupSprite = sItemPickupNone;
 	inventorySprite = sItemInventoryNone;
 	maxStack = 999;
+	static drop = function(xx, yy) {
+		
+	};
+	
 	static onClick = function() {
 		oChatTextField.chatField.addLine("on click for " + displayName);
 	};
+	
 	static onRightClick = function() {
 		oChatTextField.chatField.addLine("on right click for " + displayName);
 	};

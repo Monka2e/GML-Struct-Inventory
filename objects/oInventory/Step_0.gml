@@ -17,3 +17,6 @@ if (mouse_check_button_pressed(mb_left)) {
 if (mouse_check_button_pressed(mb_right)) {
 	global.INVENTORY[selectedInventory].onRightClick();
 }
+if (keyboard_check_pressed(ord("T"))) {
+	inventoryDropItem(selectedInventory);
+}
