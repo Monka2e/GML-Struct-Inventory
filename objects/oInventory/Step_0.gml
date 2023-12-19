@@ -11,12 +11,14 @@ if (selectedInventory > global.INVENTORY_SIZE - 1) {
 	selectedInventory = global.INVENTORY_SIZE - 1;
 }
 
-if (mouse_check_button_pressed(mb_left)) {
-	global.INVENTORY[selectedInventory].onClick();
-}
-if (mouse_check_button_pressed(mb_right)) {
-	global.INVENTORY[selectedInventory].onRightClick();
-}
-if (keyboard_check_pressed(ord("T"))) {
-	inventoryDropItem(selectedInventory);
+if (global.INVENTORY[selectedInventory] != noone) {
+	if (mouse_check_button_pressed(mb_left)) {
+		global.INVENTORY[selectedInventory].onClick();
+	}
+	if (mouse_check_button_pressed(mb_right)) {
+		global.INVENTORY[selectedInventory].onRightClick();
+	}
+	if (keyboard_check_pressed(ord("T"))) {
+		inventoryDropItem(selectedInventory);
+	}
 }

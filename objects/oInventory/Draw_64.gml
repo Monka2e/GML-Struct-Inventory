@@ -1,10 +1,19 @@
 for (var i = 0; i < array_length(global.INVENTORY); i++) {
-	var inventoryText = global.INVENTORY[i].displayName;
-	if (global.INVENTORY[i].ID != ItemID.NONE) {
-		inventoryText += ": " + string(global.INVENTORY[i].stack)
+	var noItem = true;
+	var inventoryText = "no item";
+	var sprite = noone;
+	
+	if (global.INVENTORY[i] != noone) {
+		noItem = false;
+		inventoryText = global.INVENTORY[i].displayName;
+		sprite = global.INVENTORY[i].inventorySprite;
 	}
 	
-	draw_sprite(global.INVENTORY[i].inventorySprite, 0, 20, 20 + 25 * i);
+	if (!noItem && global.INVENTORY[i].ID != ItemID.NONE) {
+		inventoryText += ": " + string(global.INVENTORY[i].stack);
+	}
+	
+	if(sprite != noone) { draw_sprite(sprite, 0, 20, 20 + 25 * i); }
 	draw_text(40, 20 + 25 * i, inventoryText);
 }
 
