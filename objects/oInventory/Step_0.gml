@@ -14,3 +14,6 @@ if (selectedInventory > global.INVENTORY_SIZE - 1) {
 if (mouse_check_button_pressed(mb_left)) {
 	global.INVENTORY[selectedInventory].onClick();
 }
+if (mouse_check_button_pressed(mb_right)) {
+	global.INVENTORY[selectedInventory].onRightClick();
+}

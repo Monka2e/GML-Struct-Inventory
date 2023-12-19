@@ -5,7 +5,10 @@ function BaseItem(itemStack = 1) constructor {
 	inventorySprite = sItemInventoryNone;
 	maxStack = 999;
 	static onClick = function() {
-		oChatTextField.chatField.addLine("click event for " + displayName);
+		oChatTextField.chatField.addLine("on click for " + displayName);
+	};
+	static onRightClick = function() {
+		oChatTextField.chatField.addLine("on right click for " + displayName);
 	};
 	
 	static addToStack = function(stackAdd) {
@@ -16,7 +19,6 @@ function BaseItem(itemStack = 1) constructor {
 		} else {
 			stack += stackAdd;
 		}
-		show_debug_message("leftover: " + string(leftover));
 		return leftover;
 	};
 	

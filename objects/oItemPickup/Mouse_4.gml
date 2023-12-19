@@ -1,2 +1,1 @@
-inventoryAddItemStack(item);
-instance_destroy(self);
+inventoryAddItemStack(item, self);
