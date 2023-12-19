@@ -23,6 +23,6 @@ function inventoryAddItemStack(item, startIndex = 0) {
 		}
 	}
 	if (item.stack > 0) {
-		inventoryAddItem(item);
+		inventoryAddItemToEmptySlot(item);
 	}
 }
