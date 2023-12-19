@@ -4,8 +4,9 @@ function BaseItem(itemStack = 1) constructor {
 	pickupSprite = sItemPickupNone;
 	inventorySprite = sItemInventoryNone;
 	maxStack = 999;
-	static drop = function(xx, yy) {
-		
+	static drop = function() {
+		stack--;
+		return new BaseItem(1);
 	};
 	
 	static onClick = function() {

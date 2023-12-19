@@ -14,8 +14,10 @@ function getItemFromID(itemID, itemStack = 1) {
 			
 		case ItemID.NONE:
 			throw("item cannot be made as none");
+			break;
 			
 		default:
 			throw("invalid item ID");
+			break;
 	}
 }
