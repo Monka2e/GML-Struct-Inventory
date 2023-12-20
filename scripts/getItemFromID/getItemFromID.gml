@@ -1,5 +1,5 @@
 function getItemFromID(itemID, itemStack = 1) {
-	newItem = new BaseItem(itemStack);
+	var newItem = new BaseItem(itemStack);
 	switch(itemID) {
 		case ItemID.APPLE:
 			newItem = new Apple(itemStack);
