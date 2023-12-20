@@ -1,23 +1,31 @@
 function getItemFromID(itemID, itemStack = 1) {
+	newItem = new BaseItem(itemStack);
 	switch(itemID) {
 		case ItemID.APPLE:
-			return new Apple(itemStack);
+			newItem = new Apple(itemStack);
+			break;
 			
 		case ItemID.ORANGE:
-			return new Orange(itemStack);
+			newItem = new Orange(itemStack);
+			break;
 			
 		case ItemID.PEAR:
-			return new Pear(itemStack);
+			newItem = new Pear(itemStack);
+			break;
 			
 		case ItemID.AXE:
-			return new Axe(itemStack);
+			newItem = new Axe(itemStack);
+			break;
 			
 		case ItemID.NONE:
-			throw("item cannot be made as none");
+			show_debug_message("item made as none");
 			break;
 			
 		default:
 			throw("invalid item ID");
 			break;
 	}
+	
+	newItem.stack = min(newItem.stack, newItem.maxStack);
+	return newItem;
 }
