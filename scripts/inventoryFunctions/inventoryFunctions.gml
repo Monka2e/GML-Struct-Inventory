@@ -28,9 +28,10 @@ function inventoryAddItemStack(item, pickupItem) {
 	}
 }
 
-function inventoryDropItem(inventoryIndex) {
+function inventoryDropItem(inventoryIndex, dropAll) {
 	if (global.INVENTORY[inventoryIndex] != noone) {
-		var dropItem = global.INVENTORY[inventoryIndex].drop();
+		var dropItem = global.INVENTORY[inventoryIndex].drop(dropAll);
+		
 		if (global.INVENTORY[inventoryIndex].stack <= 0) { global.INVENTORY[inventoryIndex] = noone };
 		var dropItemPickup = instance_create_layer(mouse_x, mouse_y, layer_get_id("Instances"), oItemPickup);
 		dropItemPickup.item = dropItem;

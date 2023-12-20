@@ -4,8 +4,14 @@ function Axe(itemStack) : BaseItem(itemStack) constructor {
 	pickupSprite = sItemPickupAxe;
 	inventorySprite = sItemInventoryAxe;
 	maxStack = 1;
-	static drop = function() {
-		stack--;
-		return new Axe(1);
+	static drop = function(dropAll) {
+		if (dropAll) {
+			var newItem = new Axe(stack);
+			stack = 0;
+			return newItem;
+		} else {
+			stack--;
+			return new Axe(1);
+		}
 	};
 };
