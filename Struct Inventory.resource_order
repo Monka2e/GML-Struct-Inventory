@@ -32,6 +32,7 @@
     {"name":"sItemPickupPear","order":1,"path":"sprites/sItemPickupPear/sItemPickupPear.yy",},
     {"name":"Pear","order":4,"path":"scripts/Pear/Pear.yy",},
     {"name":"inventoryFunctions","order":1,"path":"scripts/inventoryFunctions/inventoryFunctions.yy",},
+    {"name":"sItemInventoryPear","order":2,"path":"sprites/sItemInventoryPear/sItemInventoryPear.yy",},
     {"name":"sItemInventoryNone","order":2,"path":"sprites/sItemInventoryNone/sItemInventoryNone.yy",},
     {"name":"Orange","order":2,"path":"scripts/Orange/Orange.yy",},
     {"name":"Axe","order":3,"path":"scripts/Axe/Axe.yy",},
