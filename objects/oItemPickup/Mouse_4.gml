@@ -1,1 +1,0 @@
-inventoryAddItemStack(item, self);
