@@ -13,7 +13,7 @@ function inventoryAddItemToEmptySlot(item, pickupItem = noone) {
 	}
 }
 
-function inventoryAddItemStack(item, pickupItem) {
+function inventoryAddItemStack(item, amount, pickupItem) {
 	for (var i = 0; i < global.INVENTORY_SIZE; i++) {
 		if (global.INVENTORY[i] != noone && global.INVENTORY[i].ID == item.ID) {
 			item.stack = global.INVENTORY[i].addToStack(item.stack);

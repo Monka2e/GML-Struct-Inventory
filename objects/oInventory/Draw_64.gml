@@ -1,3 +1,4 @@
+draw_set_halign(fa_left);
 for (var i = 0; i < array_length(global.INVENTORY); i++) {
 	var noItem = true;
 	var inventoryText = "no item";
